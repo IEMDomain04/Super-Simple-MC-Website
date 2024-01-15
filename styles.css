@@ -1,0 +1,380 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    font-family: Google Sans;
+    background-image: url(https://64.media.tumblr.com/127e618a8120ea125ceb2705bec4be57/893b94b7098939a0-3e/s540x810/3d26ca2456094c3c90aff438ee2782805491bb1b.gif);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Nav Bar */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 20px 70px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease;
+    z-index: 1;
+}
+header nav .logo {
+    font-size: 1.8rem;
+    color: white;
+}
+
+header nav ul a {
+    text-decoration: none;
+    margin-right: 50px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+header nav ul a:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: 2.5px solid;
+    border-color: white;
+}
+header nav.sticky {
+    padding: 22px 60px;
+    background-color: black;
+}
+/* Nav Bar*/
+
+h1, p {
+    color: wheat;
+}
+
+
+#Front {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -150px;
+}
+
+#Header1 {
+    font-size: 80px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+    padding: 25px;
+    border-radius: 25px;
+}
+
+
+#p1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#FrontButtons {
+    height: 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.button {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 25px; /* Add margin between buttons */
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+  
+  .button:disabled {
+    pointer-events: none;
+  }
+  
+  .button:hover {
+    box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+#Front2 {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -200px;
+    
+}
+
+#img1 {
+    width: 300px;
+    margin-left: 250px;
+    margin-right: 25px;
+}
+
+#p2 {
+    font-size: 25px;
+    margin-right: 250px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+    padding: 25px;
+    border-radius: 25px;
+}
+
+#Front3 {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -200px;
+}
+
+#img2 {
+    width: 500px;
+    margin-left: 250px;
+    margin-right: 25px;
+    border-radius: 25px;
+}
+
+#p3 {
+    font-size: 25px;
+    margin-right: 250px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+    padding: 25px;
+    border-radius: 25px;
+}
+
+#p4 {
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+    padding: 25px;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 450px) {
+
+    /* Nav Bar */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    padding: 20px 10px;
+    transition: all 1s ease;
+}
+header nav .logo {
+    font-size: 1.8rem;
+    color: white;
+}
+
+header nav ul a {
+    margin-right: 25px;
+    font-size: 0.5rem;
+    transition: all 0.3s ease;
+}
+header nav ul a:hover {
+    padding-bottom: 0.5rem;
+    border-bottom: 2.5px solid;
+    border-color: white;
+}
+header nav.sticky {
+    padding: 15px 10px;
+    background-color: black;
+}
+/* Nav Bar*/
+
+    h1, p {
+        color: wheat;
+        text-align: center;
+    }
+    
+    #Front {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #Header1 {
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+        padding: 15px;
+        border-radius: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #p1 {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #FrontButtons {
+        height: 0vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .button {
+        appearance: none;
+        background-color: #000000;
+        border: 2px solid wheat;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 10px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0 25px; /* Add margin between buttons */
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 8px 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+    }
+      
+      .button:disabled {
+        pointer-events: none;
+      }
+      
+      .button:hover {
+        box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      .button:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+
+
+
+    #Front2 {
+        height: -150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+    }
+    
+    #img1 {
+        width: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 12px;
+    }
+    
+    #p2 {
+        font-size: 12px;
+        margin-right: 50px;
+        margin-left: 50px;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+        padding: 20px;
+        border-radius: 25px;
+    }
+    
+    #Front3 {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    #img2 {
+        width: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 12px;
+    }
+    
+    #p3 {
+        font-size: 12px;
+        margin-right: 50px;
+        margin-left: 50px;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    #p4 {
+        font-size: 10px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
+        padding: 15px;
+        border-radius: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 80px;
+    }
+
+    
+}
+
+

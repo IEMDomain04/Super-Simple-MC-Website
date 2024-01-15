@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Super Simple MC Website</title>
+</head>
+
+
+<body>
+    <!--NAVBAR-->
+    <header id="haha">
+        <nav class="logo">
+            <a href="#haha"><img class="logo" src="images/logo.png" alt=""></a>
+            <ul>
+                <a href="#haha">Home</a>
+                <a href="MC_Characters.html">Characters</a>
+                <a href="My-Drawings/mydrawings.html">Blocks</a>
+                <a href="MC_History.html">History</a>
+            </ul>
+        </nav>
+     </header>
+
+     <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function MinecraftCharacters() {
+      window.location.href = "MC_Characters.html";
+    }
+        function MinecraftHistory() {
+            window.location.href = "MC_History.html";
+        }
+
+
+
+     </script>
+     <!--NavBar end-->
+    
+     <!--CONTENTS-->
+     <div class="Container">
+        <section id="Front">
+            <h1 id="Header1">Super Simple Minecraft Website</h1>
+            <p id="p1">This website provides information on Minecraft, covering the general blocks, characters, and the game's history. </p>
+        </section>
+
+        <section id="FrontButtons">
+            <button class="button" role="button" onclick="MinecraftCharacters()">Characters in Minecraft</button>
+            <button class="button" role="button" onclick="MinecraftBlocks()">Place some Blocks</button>
+            <button class="button" role="button" onclick="MinecraftHistory()">The History</button>
+        </section>
+
+        <section id="Front2">
+            <img id="img1" src="https://cdn.pixabay.com/photo/2013/07/12/19/25/minecraft-154749_1280.png" alt="">
+            <p id="p2"> Minecraft is a widely popular sandbox video game featuring a blocky, procedurally generated 3D world. Developed by Mojang Studios, it allows players to explore, gather resources, 
+                and build structures in a creatively open environment. With diverse gameplay modes, including survival and creative, Minecraft has gained global acclaim for its unique blend of exploration, 
+                creativity, and adventure since its release in 2011. <a  style="color: antiquewhite;" href="https://www.minecraft.net/en-us" target="_blank">Minecraft Official Website</a> </p>
+        </section>
+
+        <section id="Front3">
+            <img id="img2" src="https://logos-world.net/wp-content/uploads/2022/09/Mojang-Studios-Logo.jpg" alt="">
+            <p id="p3"> Mojang is the Swedish video game development studio responsible for creating Minecraft, one of the most popular and influential sandbox games globally. Acquired by Microsoft in 2014, 
+                Mojang continues to develop and support Minecraft, allowing players to explore and create their virtual worlds using a variety of blocks and game mechanics..</p>
+        </section>
+
+        <p id="p4"> I am a passionate Minecraft enthusiast, and I am currently honing my coding skills by developing a website centered around content 
+            related to my favorite game, Minecraft.</p>
+
+     </div>
+</body>
+</html>
