@@ -15,3 +15,8 @@
         function MinecraftBlocks() {
             window.location.href = "MC_Blocks.html";
         }
+        
+        function PlaceBlockFunction() {
+          alert("You placed a Block!");
+        }
+        
