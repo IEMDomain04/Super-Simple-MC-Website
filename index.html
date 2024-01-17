@@ -17,41 +17,24 @@
             <ul>
                 <a href="#haha">Home</a>
                 <a href="MC_Characters.html">Characters</a>
-                <a href="My-Drawings/mydrawings.html">Blocks</a>
-                <a href="MC_History.html">History</a>
+                <a href="MC_Blocks.html">Blocks</a>
+                <a href="MC_History.html">Creators</a>
             </ul>
         </nav>
      </header>
-
-     <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-        var nav = document.querySelector("nav");
-        nav.classList.toggle("sticky", window.scrollY > 0);
-        })
-
-        function MinecraftCharacters() {
-      window.location.href = "MC_Characters.html";
-    }
-        function MinecraftHistory() {
-            window.location.href = "MC_History.html";
-        }
-
-
-
-     </script>
      <!--NavBar end-->
     
      <!--CONTENTS-->
      <div class="Container">
         <section id="Front">
             <h1 id="Header1">Super Simple Minecraft Website</h1>
-            <p id="p1">This website provides information on Minecraft, covering the general blocks, characters, and the game's history. </p>
+            <p id="p1">This website provides information on Minecraft, covering the general blocks, characters, and the game's creators. </p>
         </section>
 
         <section id="FrontButtons">
             <button class="button" role="button" onclick="MinecraftCharacters()">Characters in Minecraft</button>
             <button class="button" role="button" onclick="MinecraftBlocks()">Place some Blocks</button>
-            <button class="button" role="button" onclick="MinecraftHistory()">The History</button>
+            <button class="button" role="button" onclick="MinecraftHistory()">The Creators</button>
         </section>
 
         <section id="Front2">
