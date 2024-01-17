@@ -58,18 +58,17 @@ header nav.sticky {
 }
 /* Nav Bar*/
 
-h1, p {
+h1, p, h2 {
     color: wheat;
 }
 
 
 #Front {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
 }
 
 #Header1 {
@@ -86,12 +85,41 @@ h1, p {
     margin-bottom: 25px;
 }
 
+#buttonBlockPlacement {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid wheat;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15%;
+    will-change: transform;
+    padding: 8px 16px;
+    margin: 8px;
+}
+
+#buttonBlockPlacement:hover {
+    background-color: #333333;
+    transform: scale(1.1);
+}
+
 div.Container2 {
-    height: 40vh;
+    height: 1vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: -10%;
 }
 
 #Front_Blocks {
@@ -110,7 +138,6 @@ div.Container2 {
 
 #pBlock {
     font-size: 50px;
-    margin-bottom: 100px;
     
 }
 
@@ -125,7 +152,7 @@ div.Container2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-bottom: 100px;
 }
 
@@ -237,8 +264,36 @@ header nav.sticky {
         margin-right: 15px;
     }
 
+    #buttonBlockPlacement {
+        appearance: none;
+        background-color: #000000;
+        border: 2px solid wheat;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 40%;
+        will-change: transform;
+        padding: 8px 16px;
+        margin: 8px;
+    }
+    
+    #buttonBlockPlacement:hover {
+        background-color: #333333;
+        transform: scale(1.1);
+    }
+
     div.Container2 {
-        height: 35vh;
+        height: 1vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -278,7 +333,7 @@ header nav.sticky {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 40%;
+        margin-top: 30%;
         margin-bottom: 20%;
     }
     
