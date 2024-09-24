@@ -1,380 +1,160 @@
-html {
-    scroll-behavior: smooth;
-}
+/* Global Styles */
 * {
-    padding: 0;
     margin: 0;
-    
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    font-family: Google Sans;
-    background-image: url(https://64.media.tumblr.com/127e618a8120ea125ceb2705bec4be57/893b94b7098939a0-3e/s540x810/3d26ca2456094c3c90aff438ee2782805491bb1b.gif);
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Nav Bar */
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    padding: 20px 70px;
-    background-color: transparent;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 1s ease;
-    z-index: 1;
-}
-header nav .logo {
-    font-size: 1.8rem;
-    color: white;
-}
-
-header nav ul a {
+a {
     text-decoration: none;
-    margin-right: 50px;
-    letter-spacing: 2px;
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-header nav ul a:hover {
-    padding-bottom: 0.5rem;
-    border-bottom: 2.5px solid;
-    border-color: white;
-}
-header nav.sticky {
-    padding: 22px 60px;
-    background-color: black;
-}
-/* Nav Bar*/
-
-h1, p {
-    color: wheat;
+    color: #333;
 }
 
+ul {
+    list-style: none;
+}
 
-#Front {
-    height: 100vh;
+/* Navbar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: -150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-#Header1 {
-    font-size: 80px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-    padding: 25px;
-    border-radius: 25px;
+nav .logo img {
+    height: 50px;
 }
 
+nav ul {
+    display: flex;
+}
 
-#p1 {
-    font-size: 30px;
-    margin-top: 10px;
+nav ul a {
+    color: white;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav ul a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.Container {
+    max-width: 1200px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
+}
+
+#Front h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#Front p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 
 #FrontButtons {
-    height: 0vh;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
-.button {
-    appearance: none;
-    background-color: #000000;
-    border: 2px solid wheat;
-    border-radius: 15px;
-    box-sizing: border-box;
-    color: #FFFFFF;
+#FrontButtons .button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
-    display: inline-block;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 30px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0 25px; /* Add margin between buttons */
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100%;
-    will-change: transform;
+    transition: background 0.3s;
 }
-  
-  .button:disabled {
-    pointer-events: none;
-  }
-  
-  .button:hover {
-    box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  
-  .button:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
 
+#FrontButtons .button:hover {
+    background-color: #0056b3;
+}
 
-#Front2 {
-    height: 50vh;
+/* Sections */
+#Front2, #Front3 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    margin-bottom: -200px;
-    
+    margin-bottom: 40px;
 }
 
-#img1 {
-    width: 300px;
-    margin-left: 250px;
-    margin-right: 25px;
+#Front2 img, #Front3 img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
 }
 
-#p2 {
-    font-size: 25px;
-    margin-right: 250px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-    padding: 25px;
-    border-radius: 25px;
-}
-
-#Front3 {
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -200px;
-}
-
-#img2 {
-    width: 500px;
-    margin-left: 250px;
-    margin-right: 25px;
-    border-radius: 25px;
-}
-
-#p3 {
-    font-size: 25px;
-    margin-right: 250px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-    padding: 25px;
-    border-radius: 25px;
+#Front2 p, #Front3 p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 #p4 {
-    font-size: 25px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-    padding: 25px;
-    border-radius: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
-
-/*RESPONSIVE*/
-@media only screen and (max-width: 450px) {
-
-    /* Nav Bar */
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header nav {
-    padding: 20px 10px;
-    transition: all 1s ease;
-}
-header nav .logo {
-    font-size: 1.8rem;
-    color: white;
-}
-
-header nav ul a {
-    margin-right: 25px;
-    font-size: 0.5rem;
-    transition: all 0.3s ease;
-}
-header nav ul a:hover {
-    padding-bottom: 0.5rem;
-    border-bottom: 2.5px solid;
-    border-color: white;
-}
-header nav.sticky {
-    padding: 15px 10px;
-    background-color: black;
-}
-/* Nav Bar*/
-
-    h1, p {
-        color: wheat;
-        text-align: center;
-    }
-    
-    #Front {
-        height: 80vh;
-        display: flex;
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #Header1 {
-        font-size: 30px;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-        padding: 15px;
-        border-radius: 25px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    #p1 {
-        font-size: 10px;
-        margin-top: 10px;
-        margin-left: 15px;
-        margin-right: 15px;
+        text-align: center;
     }
 
     #FrontButtons {
-        height: 0vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
+        flex-direction: column;
     }
-    
-    .button {
-        appearance: none;
-        background-color: #000000;
-        border: 2px solid wheat;
-        border-radius: 15px;
-        box-sizing: border-box;
-        color: #FFFFFF;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        font-size: 10px;
-        font-weight: 600;
-        line-height: normal;
-        margin: 0 25px; /* Add margin between buttons */
-        min-height: 60px;
-        min-width: 0;
-        outline: none;
-        padding: 8px 5px;
+
+    #Front2, #Front3 {
+        flex-direction: column;
         text-align: center;
-        text-decoration: none;
-        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
+    }
+
+    #Front2 img, #Front3 img {
         width: 100%;
-        will-change: transform;
-    }
-      
-      .button:disabled {
-        pointer-events: none;
-      }
-      
-      .button:hover {
-        box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
-        transform: translateY(-2px);
-      }
-      
-      .button:active {
-        box-shadow: none;
-        transform: translateY(0);
-      }
-
-
-
-    #Front2 {
-        height: -150vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: -40px;
-    }
-    
-    #img1 {
-        width: 100px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 12px;
-    }
-    
-    #p2 {
-        font-size: 12px;
-        margin-right: 50px;
-        margin-left: 50px;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-        padding: 20px;
-        border-radius: 25px;
-    }
-    
-    #Front3 {
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 120px;
-    }
-    
-    #img2 {
-        width: 200px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 12px;
-    }
-    
-    #p3 {
-        font-size: 12px;
-        margin-right: 50px;
-        margin-left: 50px;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-        padding: 20px;
-        border-radius: 25px;
+        margin: 0 0 20px 0;
     }
 
-    #p4 {
-        font-size: 10px;
+    #Front2 p, #Front3 p {
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for transparency */
-        padding: 15px;
-        border-radius: 25px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 100px;
     }
-
-    
 }
 
+@media (max-width: 480px) {
+    #Front h1 {
+        font-size: 2rem;
+    }
 
+    #Front p, #p4 {
+        font-size: 1rem;
+    }
+}
