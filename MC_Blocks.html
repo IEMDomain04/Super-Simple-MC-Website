@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MC_Blocks_Styles.css">
+    <script src="script.js"></script>
+    <title>Super Simple MC Website</title>
+</head>
+
+
+<body>
+    <!--NAVBAR-->
+    <header id="haha">
+        <nav class="logo">
+            <a href="#haha"><img class="logo" src="images/logo.png" alt=""></a>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="MC_Characters.html">Characters</a>
+                <a href="#haha">Blocks</a>
+                <a href="MC_History.html">Creators</a>
+            </ul>
+        </nav>
+     </header>
+     <!--NavBar end-->
+    
+     <!--CONTENTS-->
+
+     <div class="Container">
+        <section id="Front">
+            <h1 id="Header1">Blocks in Minecraft</h1>
+            <p id="p1">There are many blocks in Minecraft, and I'll just show five of them.</p>
+            <p>Press the IMAGE to place a block</p>
+            <h2 id="incrementText" style="margin-top: 18px;">0</h2>
+            <button id="buttonBlockPlacement" onclick="ShowBlockCount()">Place Blocks</button>
+            <button id="buttonBlockPlacement" onclick="decrementButton()">Break Block</button>
+        </section>
+     </div>
+
+     <div class="Container2">
+        <section id="Front_Blocks">
+            <img id="imgBlock" onclick="PlaceBlockFunction()" src="imgBlocks/imgCobblestone.png" alt="">
+            <p id="pBlock">CobbleStone</p>
+        </section>
+
+        <section id="Front_Blocks">
+            <img id="imgBlock" onclick="PlaceBlockFunction()" src="imgBlocks/imgDirt.png" alt="">
+            <p id="pBlock">Dirt Block</p>
+        </section>
+
+        <section id="Front_Blocks">
+            <img id="imgBlock" onclick="PlaceBlockFunction()" src="imgBlocks/imgWood.png" alt="">
+            <p id="pBlock">Wood Log</p>
+        </section>
+        
+     </div>
+
+     <section id="FrontButtons">
+        <button class="button" role="button" onclick="MinecraftCharacters()">Characters in Minecraft</button>
+        <button class="button" role="button" onclick="MinecraftHistory()">The Makers of Minecraft</button>
+    </section>
+     
+
+    
+</body>
+
+</html>
